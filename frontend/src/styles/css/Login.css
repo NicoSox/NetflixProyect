@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.card-login-main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.card-subscribe{
+  margin-top: 20px;
+}
+
+.img-background{
+  background-image:
+  linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
+  url('/assets/fondo-login1.jpg');
+  background-size: cover;
+  min-height: 140vh;
+}
+.card-login {
+  width: 450px;
+  padding: 60px 68px 40px;
+  background-color: rgba(0, 0, 0, 0.65);
+  border-radius: 4px;
+  color: white;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 6rem;
+}
+
+.img-logo {
+  height: 83px;
+  width: 188px;
+  position: absolute;
+  top: -7px;
+  left: 8.3rem;
+  margin: 10px; /* opcional, para separarlo un poco del borde */
+  z-index: 1000; /* para que quede encima de otros elementos */
+  filter: brightness(1.3);
+}
+
+.input{
+  background-color: rgba(20, 20, 20, 0.7); /* fondo oscuro translúcido */
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 14px;
+  padding: 20px 16px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+  margin-bottom: 20px;
+  border: 1px solid grey;
+}
+.input:focus {
+  border: 2px solid white; 
+}
+
+.input-error {
+  border: 2px solid red;
+}
+
+.input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px rgba(10, 14, 20, 0.7) inset;
+  -webkit-text-fill-color: white;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.input::placeholder {
+  color: #8c8c8c; 
+}
+
+.input-container {
+  position: relative;
+  margin-bottom: 24px;
+  margin-top: -30px;
+}
+
+.label-float {
+  position: absolute;
+  top: 20px;
+  left: 16px;
+  color: #8c8c8c;
+  font-size: 16px;
+  pointer-events: none;
+  transition: all 0.2s ease;
+}
+
+/* Cuando el input está enfocado o tiene texto */
+.input:focus + .label-float,
+.input:not(:placeholder-shown) + .label-float {
+  top: 4px;
+  left: 12px;
+  font-size: 12px;
+}
+.title-login{
+    font-size: 30px;
+    color: white;
+    margin-bottom: 60px;
+    font-weight: 750;
+}
+
+.button-login {
+  background-color: #e50914;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  height: 40px;
+  width: 100%;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: -30px; /* margen razonable para separarlo del input */
+  display: flex; /* esto sí activa align-items y justify-content */
+  align-items: center;
+  justify-content: center;
+}
+
+.button-login-code{
+  background-color: rgba(50, 50, 50, 1);
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  height: 40px;
+  width: 100%;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 10px; /* margen razonable para separarlo del input */
+  display: flex; /* esto sí activa align-items y justify-content */
+  align-items: center;
+  justify-content: center;
+
+}
+.forgot-password-link {
+  color: white;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.forgot-password-card{
+   display: flex;
+  justify-content: center;
+}
+.checkbox-container {
+  display: inline-flex;
+  align-items: center;      /* centra verticalmente texto y checkbox */
+  cursor: pointer;
+  font-size: 16px;          /* tamaño del texto igual o cercano a la altura checkbox */
+  color: white;
+  position: relative;
+  padding-left: 30px;
+  user-select: none;
+  line-height: 18px;        /* línea igual a la altura del checkbox */
+  margin-top: 20px;
+}
+
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  left: 0;
+  top: 50%;                 /* se mueve al centro vertical */
+  transform: translateY(-50%);
+  height: 18px;
+  width: 18px;
+  background-color: #333;
+  border: 1px solid #666;
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+
+.checkbox-container input:checked ~ .checkmark::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 1px;
+  width: 5px;
+  height: 10px;
+  border: solid white;     /* <-- color blanco aquí */
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+
+.checkbox-container input:checked ~ .checkmark::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 1px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.checkbox-container .checkmark::after {
+  display: none;
+}
+
+.checkbox-container input:checked ~ .checkmark::after {
+  display: block;
+}
+
+.link-to-suscribe{
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+.link-to-suscribe:hover{
+text-decoration:underline;
+}
+
+.card-info {
+  width: 100%;
+  box-sizing: border-box;  /* que el padding no aumente el ancho */
+  border-radius: 8px;
+  cursor: pointer;
+  color: #fff;
+  overflow: visible; /* que no oculte nada */
+  text-align: left;
+  margin-top: 20px; /* para separarlo del contenido anterior */
+}
+
+.card-info:hover {
+  max-height: 300px;        /* lo suficiente para mostrar el contenido extra */
+}
+
+.extra-info {
+  margin-top: 10px;
+  color: #ccc;
+  width: 100%;
+  box-sizing: border-box; /* importante para ancho 100% con padding */
+  border-radius: 4px;
+}
+
+.error-text {
+  color: rgb(255, 0, 0);
+  font-size: 13px;
+  margin-top: 6px;
+  padding-left: 2px;
+  margin-top: -10px;
+  margin-bottom: 40px;
+  transition: opacity 0.2s ease;
+  opacity: 1;
+}
+.error-text svg {
+  vertical-align: middle;
+  margin-right: 3px;
+}
+.error-text:empty {
+  opacity: 0;
+}
