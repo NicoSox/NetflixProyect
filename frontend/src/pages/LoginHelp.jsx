@@ -1,3 +1,4 @@
+import Footer from '../components/Footer';
 import Main from '../components/loginHelp/Main'
 import NavbarLoginHelp from '../components/loginHelp/Navbar'
 const LoginHelp = () => {
@@ -5,6 +6,7 @@ const LoginHelp = () => {
     <>
     <NavbarLoginHelp/>
     <Main/>
+    <Footer/>
     </>
   )
 }

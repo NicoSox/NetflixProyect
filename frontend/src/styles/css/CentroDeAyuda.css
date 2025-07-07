@@ -1,0 +1,79 @@
+.ayuda-container {
+  background-color: #141414;
+  color: #fff;
+  min-height: 100vh;
+  padding: 2rem;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.ayuda-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.ayuda-header h1 {
+  font-size: 2.5rem;
+  color: #e50914;
+  margin-bottom: 0.5rem;
+}
+
+.ayuda-header p {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+.ayuda-busqueda {
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  width: 100%;
+  max-width: 600px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  background: #222;
+  color: white;
+}
+
+.ayuda-main h2 {
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  border-bottom: 1px solid #444;
+  padding-bottom: 0.5rem;
+}
+
+.ayuda-temas {
+  list-style: none;
+  padding-left: 0;
+  line-height: 2rem;
+}
+
+.ayuda-temas li {
+  margin: 0.5rem 0;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.ayuda-temas li:hover {
+  color: #e50914;
+}
+
+.ayuda-footer {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.btn-contacto {
+  margin-top: 1rem;
+  display: inline-block;
+  background-color: #e50914;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.btn-contacto:hover {
+  background-color: #b00710;
+}

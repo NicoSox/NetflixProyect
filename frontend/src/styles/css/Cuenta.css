@@ -1,0 +1,40 @@
+.usuario-card {
+  background-color: #222;
+  color: white;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 6px;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 0 10px rgba(0,0,0,0.8);
+}
+
+.usuario-card h3 {
+  margin-bottom: 1rem;
+}
+
+.usuario-card p {
+  margin: 0.5rem 0;
+}
+
+.btn-baja {
+  margin-top: 20px;
+  background-color: #e50914;
+  border: none;
+  padding: 10px 16px;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.btn-baja:hover:not(:disabled) {
+  background-color: #b2070e;
+}
+
+.btn-baja:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+}

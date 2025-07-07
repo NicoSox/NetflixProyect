@@ -76,6 +76,7 @@ body {
     background-color: #f2f2f2;
     margin-top:-120px;
     font-family: 'Roboto', sans-serif;
+    margin-bottom: -100px;
 }
 /* Oculta el checkbox original */
 input[type="checkbox"].custom-checkbox {

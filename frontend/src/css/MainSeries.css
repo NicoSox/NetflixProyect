@@ -1,0 +1,126 @@
+
+
+.carrusel-item {
+  flex: 0 0 auto;
+  width: 200px;
+  height: 300px;
+  border-radius: 8px;
+  object-fit: cover;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.carrusel-item:hover {
+  transform: scale(1.05);
+}
+
+
+
+
+.logito::before {
+  margin-left: 0;
+  
+}
+
+button {
+  font-size: 2rem;
+  background: none;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.carrusel-item {
+  transition: transform 0.3s;
+}
+
+.carrusel-item:hover {
+  transform: scale(1.05);
+}
+
+
+.series-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 10px 20px;
+  z-index: 1000;
+  transition: background-color 0.2s ease;
+  background-color: transparent;
+  color: white;
+}
+
+.series-header.scrolled {
+  background-color: #141414;
+  
+}
+
+
+
+.carrusel-boton:hover {
+  background-color: rgba(500, 500, 500, 0.6);
+}
+
+.carrusel-boton.derecha {
+  position: absolute;
+  right: 0px; /* pegado al borde derecho */
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 28px;
+  background-color:rgba(20, 19, 19, 0.953);
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 50px 20px;
+  border-radius: 0%;
+  z-index: 5;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  overflow: hidden;
+}
+
+.carrusel-boton.izquierda {
+   position: absolute;
+  left: 20px; /* pegado al borde izquierdo */
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 28px;
+  background-color:rgba(20, 19, 19, 0.953);
+  color: white;
+  border: none;
+   padding: 50px 20px;
+  border-radius: 0%;
+  z-index: 2;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+
+
+.carrusel-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding-left: 40px;
+  padding-right: 48px; /* espacio para que asome la media card */
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  position: relative;
+
+  /* NO pongas overflow-x: hidden aquí */
+}
+
+.carrusel-preview {
+  flex: 0 0 100px; /* mitad de una card */
+  height: 115px;
+  opacity: 0.5;
+  pointer-events: none;
+  overflow: hidden;
+  position: relative;
+  filter: blur(1px); 
+}

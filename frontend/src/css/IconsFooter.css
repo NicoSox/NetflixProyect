@@ -1,0 +1,17 @@
+.social-bar {
+  display: flex;
+  gap: 1.5rem;
+  background-color: #141414;
+  padding: 1rem;
+  justify-content: center;
+}
+.social-icon {
+  color: white;
+
+  font-size: 1.8rem;
+  transition: transform 0.2s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}
